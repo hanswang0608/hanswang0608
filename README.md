@@ -1,3 +1,3 @@
 Welcome to my repository.
 
-You can find past work done by myself.
+Here you will find some work that I have done in the past.
