@@ -36,9 +36,10 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
+  .container-nav{
+    padding:15px;
+  }
   .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -54,17 +55,15 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-fixed-top" style="background-color: rgba(255,255,255,0.9);">
-  <div class="container">
+  <div class="container-nav">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"><img src="Website/collapse-button.png" style="width:10px;height:10px"></span>                       
       </button>
       <a class="navbar-brand" href="#Hans Wang">HANS WANG</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" style="position:relative;left:150px">
+    <div class="collapse navbar-collapse" id="myNavbar" style="overflow: hidden;">
+      <ul class="nav navbar-nav navbar-right" >
         <li><a href="#PORTFOLIO" style="background-color:rgba(0,0,0,0)">PORTFOLIO</a></li>
         <li><a href="Website/Hans Wang Resume.docx" download style="background:rgba(0,0,0,0)">RESUME</a></li>
         <li><a href="#CONTACT" style="background:rgba(0,0,0,0)">CONTACT</a></li>
