@@ -50,6 +50,22 @@
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+  .resume-link a{
+    background-color: rgb(32,32,32);
+    border:none;
+    color:white;
+    padding:12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor:pointer;
+  }
+
+  .resume-link a:hover{
+    background-color:rgb(16,16,16);
+  }
+
   </style>
 </head>
 <body>
@@ -65,8 +81,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="overflow: hidden;">
       <ul class="nav navbar-nav navbar-right" >
-        <li><a href="#PORTFOLIO" style="background-color:rgba(0,0,0,0)">PORTFOLIO</a></li>
-        <li><a href="Website/Hans Wang Resume.docx" download style="background:rgba(0,0,0,0)">RESUME</a></li>
+        <li><a href="#PORTFOLIO" style="background:rgba(0,0,0,0)">PORTFOLIO</a></li>
+        <li><a href="#RESUME" style="background:rgba(0,0,0,0)">RESUME</a></li>
         <li><a href="#CONTACT" style="background:rgba(0,0,0,0)">CONTACT</a></li>
       </ul>
     </div>
@@ -83,13 +99,26 @@
 <!-- Second Container -->
 <div class="container-fluid text-center" id="PORTFOLIO" style="background-color: rgb(48,48,48);padding-top:10px">
   <h3 style="margin:40px">Who Am I?</h3>
-  <p style="padding-bottom:30px;line-height:50px;">I'm a first year Computer Engineering student who's ready to learn. <br/>Find out more on what I've done below, or just visit my Github.</p>
+  <p style="padding-bottom:30px;line-height:50px;">
+    I'm a first year Computer Engineering student who's ready to learn. 
+    <br/>Visit my Github to see my projects.
+  </p>
   <a href="https://github.com/hanswang0608/hanswang0608" class="btn btn-default btn-lg">
     <img src="Website/github.png" style="width:25px;height:25px;margin-right:8px" alt="Github"> Github
   </a>
 </div>
 
-<!-- Third Container (Grid) -->
+
+<div class="container-fluid bg-3 text-center" id="RESUME">
+  <h3 class="margin">My Resume</h3>
+  <span class="resume-link">
+    <a href="Website/Hans Wang Resume.docx" download>
+      <img src="Website/download.png" style="width:20px;height:20px;margin-right:8px">
+      Resume
+    </a>
+  </span>
+</div>
+<!-- Third Container (Grid)
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">My Projects</h3><br>
   <div class="row">
@@ -107,7 +136,7 @@
     </div>
   </div>
 </div>
-
+-->
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center" id="CONTACT">
   <h3 style="position:relative;top:1px">Contact Me</h3>
