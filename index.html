@@ -47,11 +47,17 @@
     font-size: 12px;
     letter-spacing: 5px;
   }
+
+  .navbar-nav li{
+    padding-left:10px;
+  }
+
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
-  .resume-link a{
-    background-color: rgb(32,32,32);
+
+  .resume-button a{
+    background-color: #1abc9c;
     border:none;
     color:white;
     padding:12px 30px;
@@ -62,8 +68,35 @@
     cursor:pointer;
   }
 
-  .resume-link a:hover{
-    background-color:rgb(16,16,16);
+  .about-link{
+    display:block;
+    position:relative;
+    bottom:80px;
+    visibility:hidden;
+  }
+  
+  .resume-link{
+    display:block;
+    position:relative;
+    bottom:180px;
+    visibility:hidden;
+  }
+
+  .resume-button a:hover{
+    background-color:#179c82;
+  }
+
+  .projects-link{
+    display:block;
+    position:relative;
+    bottom:79px;
+    visibility:hidden;
+  }
+
+  .img-center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   </style>
@@ -71,7 +104,7 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-fixed-top" style="background-color: rgba(255,255,255,0.9);">
+<nav class="navbar navbar-fixed-top" style="background-color: rgba(255,255,255,0.95);">
   <div class="container-nav">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -80,9 +113,10 @@
       <a class="navbar-brand" href="#Hans Wang">HANS WANG</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="overflow: hidden;">
-      <ul class="nav navbar-nav navbar-right" >
-        <li><a href="#PORTFOLIO" style="background:rgba(0,0,0,0)">PORTFOLIO</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#ABOUT" style="background:rgba(0,0,0,0)">ABOUT ME</a></li>
         <li><a href="#RESUME" style="background:rgba(0,0,0,0)">RESUME</a></li>
+        <li><a href="#PROJECTS" style="background:rgba(0,0,0,0)">PROJECTS</a></li>
         <li><a href="#CONTACT" style="background:rgba(0,0,0,0)">CONTACT</a></li>
       </ul>
     </div>
@@ -90,53 +124,57 @@
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid text-center" id="Hans Wang" style="background-color:rgb(50, 210, 255)">
+<div class="container-fluid text-center" id="Hans Wang" style="background-color:rgb(82, 218, 255)">
   <h2 style="margin:30px">HI</h2>
   <img src="Website/hans.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Hans Wang" width="350" height="350">
   <h2>I'm Hans</h2>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid text-center" id="PORTFOLIO" style="background-color: rgb(48,48,48);padding-top:10px">
-  <h3 style="margin:40px">Who Am I?</h3>
-  <p style="padding-bottom:30px;line-height:50px;">
+<div class="about-link" id="ABOUT"></div>
+<div class="container-fluid text-center" style="background-color: rgb(48,48,48);padding-top:10px;padding-bottom:82px">
+  <h3 style="margin:40px;margin-bottom:20px">Who Am I?</h3>
+  <p style="line-height:50px;">
     I'm a first year Computer Engineering student who's ready to learn. 
-    <br/>Visit my Github to see my projects.
+    <br/>Find out more about my work below, or just visit my Github.
   </p>
-  <a href="https://github.com/hanswang0608/hanswang0608" class="btn btn-default btn-lg">
+  <a href="https://github.com/hanswang0608/hanswang0608" class="btn btn-default btn-lg" style="margin:10px;margin-bottom:30px;">
     <img src="Website/github.png" style="width:25px;height:25px;margin-right:8px" alt="Github"> Github
   </a>
-</div>
-
-
-<div class="container-fluid bg-3 text-center" id="RESUME">
-  <h3 class="margin">My Resume</h3>
-  <span class="resume-link">
-    <a href="Website/Hans Wang Resume.docx" download>
+  <div class="resume-link" id="RESUME"></div>
+  <h3 style="margin:30px">My Resume</h3>
+  <span class="resume-button">
+    <a href="Website/Hans Wang Resume.pdf" download>
       <img src="Website/download.png" style="width:20px;height:20px;margin-right:8px">
       Resume
     </a>
   </span>
 </div>
-<!-- Third Container (Grid)
+
+
+<!--Third Container (Grid)-->
+<div class="projects-link" id="PROJECTS"></div>
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">My Projects</h3><br>
+  <h3 style="margin:20px">My Projects</h3><br>
   <div class="row">
     <div class="col-sm-4">
+      <p style="font-size: 20px;">Polygonal Run</p>
       <p>A 2d obstacle game based on popular mobile game "Geometry Dash"</p>
-      <img src="Website/Polygonal Run.png" class="img-responsive margin" style="width:100%" alt="Polygonal Run">
+      <div style="padding:10px;background-color:rgb(48,48,48);height:335px"><img src="Website/Polygonal Run.png" class="img-responsive margin" style="width:100%" alt="Polygonal Run"></div>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p style="font-size: 20px;">WaterTools</p>
+      <p>Android app that links all essential University of Waterloo sites in one place.</p>
+      <img class="img-center" src="Website/watertools.png" class="img-responsive margin" style="width:60%;margin-top:30px" alt="WaterTools">
     </div>
-    <div class="col-sm-4"> 
+    <div class="col-sm-4">
+      <p style="font-size: 20px;">test</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
 </div>
--->
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center" id="CONTACT">
   <h3 style="position:relative;top:1px">Contact Me</h3>
